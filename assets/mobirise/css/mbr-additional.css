@@ -5,8 +5,28 @@
 
 
 body {
-  font-family: IBM Plex Sans;
+  font-family: IBM Plex Sans;  
 }
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(0, 0, 0) rgb(255, 255, 255);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
 .display-1 {
   font-family: 'Jost', sans-serif;
   font-size: 12rem;
